@@ -310,32 +310,3 @@
         </nav>
       </div>
     </header>
-
-    <div id="qodef-page-outer">
-      <div id="qodef-page-inner" class="qodef-content-full-width">
-        <div class="qodef-page-border--left"></div>
-        <div class="qodef-page-border--right"></div>
-        <div id="side-navigation">
-          <div class="qodef-content--left-side qodef-content-side">
-            <div class="qodef-content-side-holder-outer">
-              <div id="nav_menu-5" class="widget widget_nav_menu" data-area="content-side-area">
-                <div class="menu-about-us-container">
-                  <ul id="menu-about-us" class="menu">
-                    <li id="menu-item-271" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../about-us/index.html">About us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="qodef-content--right-side qodef-content-side">
-            <div class="qodef-content-side-holder-outer">
-              <div id="nav_menu-6" class="widget widget_nav_menu" data-area="content-side-area">
-                <div class="menu-contact-us-container">
-                  <ul id="menu-contact-us" class="menu">
-                    <li id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="../press-awards/index.html">Contact us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>

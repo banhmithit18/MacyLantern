@@ -1,5 +1,4 @@
-    </div>
-        </div>
+
         <footer id="qodef-page-footer">
             <div id="qodef-page-footer-top-area">
                 <div id="qodef-page-footer-top-area-inner" class="qodef-content-grid">
