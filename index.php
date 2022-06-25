@@ -249,7 +249,7 @@
                   <div class="vc_empty_space" style="height: 24px">
                     <span class="vc_empty_space_inner"></span>
                   </div>
-                  <a class="qodef-shortcode qodef-m qodef-button qodef-layout--textual qodef-html--link" href="social-events/index.html" target="_self">
+                  <a class="qodef-shortcode qodef-m qodef-button qodef-layout--textual qodef-html--link" href="product.php" target="_self">
                     <span class="qodef-m-text">Read more</span>
                   </a>
                 </div>

@@ -243,10 +243,10 @@
         <nav class="qodef-header-navigation" role="navigation" aria-label="Top Menu">
           <ul id="qodef-main-navigation-menu" class="menu">
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
-              <a href="#"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Home</span></span></a><span class="qodef-menu-arrow"></span>
+              <a href="index.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Home</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
-              <a href="#"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Products</span></span></a><span class="qodef-menu-arrow"></span>
+              <a href="product.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Products</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
               <a href="#"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">About us</span></span></a><span class="qodef-menu-arrow"></span>
@@ -288,10 +288,10 @@
           <div class="qodef-m-inner">
             <ul id="qodef-mobile-header-navigation-menu" class="qodef-content-grid">
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
-                <a href="#"><span class="qodef-menu-item-inner">Home</span></a><span class="qodef-menu-arrow"></span>
+                <a href="index.php"><span class="qodef-menu-item-inner">Home</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
-                <a href="#"><span class="qodef-menu-item-inner">Products</span></a><span class="qodef-menu-arrow"></span>
+                <a href="product.php"><span class="qodef-menu-item-inner">Products</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
                 <a href="#"><span class="qodef-menu-item-inner">About us</span></a><span class="qodef-menu-arrow"></span>

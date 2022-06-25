@@ -15,7 +15,7 @@
             <div class="qodef-m-content qodef-content-grid">
                 <h5 class="qodef-m-title entry-title">Shop</h5>
                 <div itemprop="breadcrumb" class="qodef-breadcrumbs">
-                    <a itemprop="url" class="qodef-breadcrumbs-link" href="../index.html"><span itemprop="title">Home</span></a><span class="qodef-breadcrumbs-separator"></span><span itemprop="title" class="qodef-breadcrumbs-current">Shop</span>
+                    <a itemprop="url" class="qodef-breadcrumbs-link" href="index.php"><span itemprop="title">Home</span></a><span class="qodef-breadcrumbs-separator"></span><span itemprop="title" class="qodef-breadcrumbs-current">Shop</span>
                 </div>
             </div>
         </div>

@@ -10,6 +10,11 @@ include('includes/header.php');
     .qodef-page-title .qodef-m-content {
         padding-top: 0px;
     }
+
+        .woocommerce-product-gallery {
+          opacity: 1 !important;
+        }
+      
 </style>
 
 <div id="qodef-page-outer">
@@ -351,7 +356,7 @@ include('includes/header.php');
                               <div id="comment-5" class="comment_container">
                               <img
                                   data-del="avatar"
-                                  src="../../wp-content/uploads/2019/11/user-img-1.png"
+                                  src="img/review/default_avatar.png"
                                   class="avatar pp-user-avatar avatar-60 photo"
                                   height="60"
                                   width="60"
@@ -449,7 +454,7 @@ include('includes/header.php');
                                 ></span
                               >
                               <form
-                                action="https://banquet.qodeinteractive.com/wp-comments-post.php"
+                                action=""
                                 method="post"
                                 id="commentform"
                                 class="comment-form"
@@ -516,19 +521,7 @@ include('includes/header.php');
                                     size="30"
                                     required
                                   />
-                                </p>
-                                <p class="comment-form-cookies-consent">
-                                  <input
-                                    id="wp-comment-cookies-consent"
-                                    name="wp-comment-cookies-consent"
-                                    type="checkbox"
-                                    value="yes"
-                                  />
-                                  <label for="wp-comment-cookies-consent"
-                                    >Save my name, email, and website in this
-                                    browser for the next time I comment.</label
-                                  >
-                                </p>
+                                </p>                               
                                 <p class="form-submit">
                                   <input
                                     name="submit"
@@ -550,55 +543,6 @@ include('includes/header.php');
                                     value="0"
                                   />
                                 </p>
-                                <div class="wantispam-required-fields">
-                                  <input
-                                    type="hidden"
-                                    name="wantispam_t"
-                                    class="wantispam-control wantispam-control-t"
-                                    value="1654624746"
-                                  />
-                                  <div
-                                    class="wantispam-group wantispam-group-q"
-                                    style="clear: both"
-                                  >
-                                    <label
-                                      >Current
-                                      <a
-                                        href="../../cdn-cgi/l/email-protection.html"
-                                        class="__cf_email__"
-                                        data-cfemail="fb829ebb89"
-                                        >[email&#160;protected]</a
-                                      >
-                                      <span class="required">*</span></label
-                                    >
-                                    <input
-                                      type="hidden"
-                                      name="wantispam_a"
-                                      class="wantispam-control wantispam-control-a"
-                                      value="2022"
-                                    />
-                                    <input
-                                      type="text"
-                                      name="wantispam_q"
-                                      class="wantispam-control wantispam-control-q"
-                                      value="7.2.9"
-                                      autocomplete="off"
-                                    />
-                                  </div>
-                                  <div
-                                    class="wantispam-group wantispam-group-e"
-                                    style="display: none"
-                                  >
-                                    <label>Leave this field empty</label>
-                                    <input
-                                      type="text"
-                                      name="wantispam_e_email_url_website"
-                                      class="wantispam-control wantispam-control-e"
-                                      value=""
-                                      autocomplete="off"
-                                    />
-                                  </div>
-                                </div>
                               </form>
                             </div>
                           </div>
@@ -610,32 +554,28 @@ include('includes/header.php');
                   <section class="related products">
                     <h2>Related products</h2>
                     <!--product layout-->
-                    <div
-                      class="qodef-woo-product-list qodef-item-layout--info-below"
-                    >
+                    <div class="qodef-woo-product-list qodef-item-layout--info-below">
                       <!--product grid-->
                       <ul class="products columns-3">
                         <!-- product-->
-                        <li
-                          class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple"
-                        >
+                        <li class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple">
                           <div class="qodef-woo-product-inner">
                             <div class="qodef-woo-product-image">
                               <img
                                 width="600"
                                 height="734"
-                                src="img/product/product-2.jpg"
+                                src="img/product/product_2.jpg"
                                 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                 alt="c"
                                 loading="lazy"
-                                srcset="img/product/product-2.jpg 600w"
+                                srcset="img/product/product_2.jpg 600w"
                                 sizes="(max-width: 600px) 100vw, 600px"
                               />
                               <!--sold mark-->
                               <!-- <span
                                 class="qodef-woo-product-mark qodef-out-of-stock"
                                 >Sold</span -->
-                              >
+                              
                               <div class="qodef-woo-product-image-inner">
                                 <a
                                   href="#"
@@ -655,7 +595,7 @@ include('includes/header.php');
                               </h5>
                               <span class="price"
                                 ><span class="woocommerce-Price-amount amount"
-                                  ><bdi>Contact us ></bdi></span
+                                  ><bdi>Contact us</bdi></span
                                 ></span
                               >
                             </div>
@@ -666,26 +606,18 @@ include('includes/header.php');
                             ></a>
                           </div>
                         </li>
-                        <li
-                          class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple"
-                        >
+                        <li class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple">
                           <div class="qodef-woo-product-inner">
                             <div class="qodef-woo-product-image">
                               <img
                                 width="600"
                                 height="734"
-                                src="img/product/product-2.jpg"
+                                src="img/product/product_2.jpg"
                                 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                 alt="c"
                                 loading="lazy"
-                                srcset="img/product/product-2.jpg 600w"
-                                sizes="(max-width: 600px) 100vw, 600px"
-                              />
-                              <!--sold mark-->
-                              <!-- <span
-							  class="qodef-woo-product-mark qodef-out-of-stock"
-							  >Sold</span -->
-                              >
+                                srcset="img/product/product_2.jpg 600w"
+                                sizes="(max-width: 600px) 100vw, 600px"/>                                                        
                               <div class="qodef-woo-product-image-inner">
                                 <a
                                   href="#"
@@ -705,7 +637,7 @@ include('includes/header.php');
                               </h5>
                               <span class="price"
                                 ><span class="woocommerce-Price-amount amount"
-                                  ><bdi>Contact us ></bdi></span
+                                  ><bdi>Contact us</bdi></span
                                 ></span
                               >
                             </div>
@@ -716,26 +648,19 @@ include('includes/header.php');
                             ></a>
                           </div>
                         </li>
-                        <li
-                          class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple"
-                        >
+                        <li class="product type-product post-256 status-publish first outofstock product_cat-simple product_tag-supplies product_tag-handmade product_tag-set has-post-thumbnail shipping-taxable purchasable product-type-simple">
                           <div class="qodef-woo-product-inner">
                             <div class="qodef-woo-product-image">
                               <img
                                 width="600"
                                 height="734"
-                                src="img/product/product-2.jpg"
+                                src="img/product/product_2.jpg"
                                 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                 alt="c"
                                 loading="lazy"
-                                srcset="img/product/product-2.jpg 600w"
+                                srcset="img/product/product_2.jpg 600w"
                                 sizes="(max-width: 600px) 100vw, 600px"
-                              />
-                              <!--sold mark-->
-                              <!-- <span
-							class="qodef-woo-product-mark qodef-out-of-stock"
-							>Sold</span -->
-                              >
+                              />                               
                               <div class="qodef-woo-product-image-inner">
                                 <a
                                   href="#"
@@ -755,7 +680,7 @@ include('includes/header.php');
                               </h5>
                               <span class="price"
                                 ><span class="woocommerce-Price-amount amount"
-                                  ><bdi>Contact us ></bdi></span
+                                  ><bdi>Contact us</bdi></span
                                 ></span
                               >
                             </div>
@@ -776,7 +701,9 @@ include('includes/header.php');
         </div>
       </div>
 
-
+    
+ 
+   
 <?php
 include('includes/footer.php');
 ?>
