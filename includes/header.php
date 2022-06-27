@@ -235,7 +235,7 @@
   <div id="qodef-page-wrapper">
     <header id="qodef-page-header">
       <div id="qodef-page-header-inner">
-        <a class="qodef-header-logo-link qodef-height--not-set" href="../index.html" rel="home">
+        <a class="qodef-header-logo-link qodef-height--not-set" href="index.php" rel="home">
           <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" />
           <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
           <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--light" alt="logo main" loading="lazy" />
@@ -249,13 +249,13 @@
               <a href="product.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Products</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
-              <a href="#"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">About us</span></span></a><span class="qodef-menu-arrow"></span>
+              <a href="about-us.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">About us</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
               <a href="faqs.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">FAQs</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
-              <a href="#"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Contact us</span></span></a><span class="qodef-menu-arrow"></span>
+              <a href="contact-us.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Contact us</span></span></a><span class="qodef-menu-arrow"></span>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children qodef-menu-item--narrow">
               <a href="blog.php"><span class="qodef-menu-item-inner"><span class="qodef-menu-item-text text-color">Blogs</span></span></a><span class="qodef-menu-arrow"></span>
@@ -294,13 +294,13 @@
                 <a href="product.php"><span class="qodef-menu-item-inner">Products</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
-                <a href="#"><span class="qodef-menu-item-inner">About us</span></a><span class="qodef-menu-arrow"></span>
+                <a href="about-us.php"><span class="qodef-menu-item-inner">About us</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
                 <a href="faqs.php"><span class="qodef-menu-item-inner">FAQs</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
-                <a href="#"><span class="qodef-menu-item-inner">Contact us</span></a><span class="qodef-menu-arrow"></span>
+                <a href="contact-us.php"><span class="qodef-menu-item-inner">Contact us</span></a><span class="qodef-menu-arrow"></span>
               </li>
               <li class="menu-item menu-item-type-custom menu-item-object-custom qodef-menu-item--narrow">
                 <a href="blog.php"><span class="qodef-menu-item-inner">Blogs</span></a><span class="qodef-menu-arrow"></span>

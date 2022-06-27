@@ -13,9 +13,9 @@
                          <div id="nav_menu-2" class="widget widget_nav_menu" data-area="footer_top_area_column_1">
                              <div class="menu-footer-menu-container">
                                  <ul id="menu-footer-menu" class="menu">
-                                     <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="../weddings/index.html">Home</a></li>
-                                     <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="../about-us/index.html">About Us</a></li>
-                                     <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="../menus/index.html">Contact</a></li>
+                                     <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="index.php">Home</a></li>
+                                     <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="about-us.php">About Us</a></li>
+                                     <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="contact-us.php">Contact</a></li>
                                  </ul>
                              </div>
                          </div>
@@ -29,9 +29,9 @@
                          <div id="nav_menu-3" class="widget widget_nav_menu" data-area="footer_top_area_column_2">
                              <div class="menu-footer-menu-social-container">
                                  <ul id="menu-footer-menu-social" class="menu">
-                                     <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" rel="noopener" href="https://www.facebook.com/QodeInteractive/">Facebook</a></li>
-                                     <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a target="_blank" rel="noopener" href="https://twitter.com/QodeInteractive">Pinterest</a></li>
-                                     <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a target="_blank" rel="noopener" href="https://www.instagram.com/qodeinteractive/">Instagram</a></li>
+                                     <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" rel="noopener" href="https://www.facebook.com/">Facebook</a></li>
+                                     <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a target="_blank" rel="noopener" href="https://twitter.com">Pinterest</a></li>
+                                     <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a target="_blank" rel="noopener" href="https://www.instagram.com/">Instagram</a></li>
                                  </ul>
                              </div>
                          </div>
@@ -77,9 +77,9 @@
          <div id="nav_menu-4" class="widget widget_nav_menu" data-area="side-area">
              <div class="menu-side-area-social-container">
                  <ul id="menu-side-area-social" class="menu">
-                     <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener" href="https://www.facebook.com/QodeInteractive/">Facebook</a></li>
-                     <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a target="_blank" rel="noopener" href="https://twitter.com/QodeInteractive">Pinterest</a></li>
-                     <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a target="_blank" rel="noopener" href="https://www.instagram.com/qodeinteractive/">Instagram</a></li>
+                     <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener" href="https://www.facebook.com/">Facebook</a></li>
+                     <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a target="_blank" rel="noopener" href="https://twitter.com/">Pinterest</a></li>
+                     <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a target="_blank" rel="noopener" href="https://www.instagram.com/">Instagram</a></li>
                  </ul>
              </div>
          </div>

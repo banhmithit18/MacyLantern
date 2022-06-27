@@ -83,7 +83,7 @@ File list:
   margin-left: 5px;
 }
 
-.active:after {
+.faq-active:after {
   content: "\2B9D";
 }
 .ps {

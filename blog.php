@@ -52,7 +52,29 @@
                     </div>
                 </div>
                 <div id="qodef-woo-page" class="qodef-grid-item qodef-page-content-section qodef-col--12 qodef--list">
-
+                <header class="woocommerce-products-header"></header>
+                    <div class="woocommerce-notices-wrapper"></div>
+            
+                    <div class="vc_row">
+                        <div class='vc_col-sm-8'>
+                        <div class="qodef-woo-results">
+                        <p class="woocommerce-result-count">
+                            Showing 1&ndash;2 of 25 results
+                        </p>
+                    </div>
+                        </div>
+                        <div class="vc_col-sm-4">
+                        <div id="search-2" class="widget widget_search" data-area="main-sidebar">
+                        <form role="search" method="get" class="qodef-search-form" action="">
+                            <label for="qodef-search-form-629f91e2d1b7b" class="screen-reader-text">Search for:</label>
+                            <div class="qodef-search-form-inner clear">
+                                <input type="search" id="qodef-search-form-629f91e2d1b7b" class="qodef-search-form-field" value="" name="s" placeholder="Search" title="Search for:" />
+                                <button type="submit" class="qodef-search-form-button"><span class="qodef-icon-elegant-icons icon_search"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                        </div>
+                    </div>
                 <div class="blog-list">
                     <br>
                     <div class="vc_row">
@@ -61,9 +83,9 @@
                         </div>
                         <div class='vc_col-sm-9'>
                             <div class='vc_row'>
-                                <h4 style="margin:0px">10 reasons why you should have a Hoi An's Lantern</h4>
+                                <h4 style="margin:0px"> <a href="blog-detail.php">10 reasons why you should have a Hoi An's Lantern</a></h4>
                             </div>
-                            <div class='vc_row'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a suscipit tellus. Vestibulum sit amet cursus sem. Sed eleifend mi ligula, vel dapibus libero tincidunt id. Cras dictum ultrices ante nec consequat. Vivamus mattis orci sit amet ex laoreet, id finibus ipsum elementum. Ut eget dignissim lorem.......Read more
+                            <div class='vc_row'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a suscipit tellus. Vestibulum sit amet cursus sem. Sed eleifend mi ligula, vel dapibus libero tincidunt id. Cras dictum ultrices ante nec consequat. Vivamus mattis orci sit amet ex laoreet, id finibus ipsum elementum. Ut eget dignissim lorem.......<a href="blog-detail.php">Read more</a>
                             </div>
                         </div>
                         <hr>
@@ -150,7 +172,12 @@
                     <div class="line"></div>
                     </br>
                 </div>
-               
+                <nav class="woocommerce-pagination">
+                        <span aria-current="page" class="#">01</span>
+                        <a class="page-numbers" href="#">02</a>
+                        <a class="page-numbers" href="#">03</a>
+                        <a class="next page-numbers" href="#"><span class="qodef-icon-linea-icons icon-arrows-right"></span></a>
+                    </nav>
 
                 </div>
         </main>

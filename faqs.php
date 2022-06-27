@@ -30,7 +30,7 @@
                             <div class="menu-about-us-container">
                                 <ul id="menu-about-us" class="menu">
                                     <li id="menu-item-271" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-271">
-                                        <a href="index.html" aria-current="page">About us</a>
+                                        <a href="about-us.php" aria-current="page">About us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -43,7 +43,7 @@
                             <div class="menu-contact-us-container">
                                 <ul id="menu-contact-us" class="menu">
                                     <li id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272">
-                                        <a href="../press-awards/index.html">Contact us</a>
+                                        <a href="contact-us.php">Contact us</a>
                                     </li>
                                 </ul>
                             </div>
