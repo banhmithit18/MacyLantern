@@ -30,7 +30,7 @@
                              <div class="menu-footer-menu-social-container">
                                  <ul id="menu-footer-menu-social" class="menu">
                                      <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" rel="noopener" href="https://www.facebook.com/">Facebook</a></li>
-                                     <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a target="_blank" rel="noopener" href="https://twitter.com">Pinterest</a></li>
+                                     <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a target="_blank" rel="noopener" href="https://www.pinterest.com">Pinterest</a></li>
                                      <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a target="_blank" rel="noopener" href="https://www.instagram.com/">Instagram</a></li>
                                  </ul>
                              </div>
@@ -63,7 +63,7 @@
      <a id="qodef-side-area-close" class="qodef-side-area-close--predefined" href="javascript:void(0)">
          <span class="qodef-lines"><span class="qodef-line qodef-line-1"></span><span class="qodef-line qodef-line-2"></span></span> </a>
      <div id="qodef-side-area-inner">
-         <div id="media_image-2" class="widget widget_media_image" data-area="side-area"><a href="../index.html"><img src="img/logo.png" class="image wp-image-1607  attachment-full size-full" alt="x" loading="lazy" /></a></div>
+         <div id="media_image-2" class="widget widget_media_image" data-area="side-area"><a href="index.php"><img src="img/logo.png" class="image wp-image-1607  attachment-full size-full" alt="x" loading="lazy" /></a></div>
          <div id="banquet_core_separator-5" class="widget widget_banquet_core_separator" data-area="side-area">
              <div class="qodef-shortcode qodef-m  qodef-separator clear ">
                  <div class="qodef-m-line" style="border-color: rgba(191,191,191,0);width: 1px;border-bottom-width: 1px;margin-top: 0px;margin-bottom: 15px"></div>
@@ -78,7 +78,7 @@
              <div class="menu-side-area-social-container">
                  <ul id="menu-side-area-social" class="menu">
                      <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a target="_blank" rel="noopener" href="https://www.facebook.com/">Facebook</a></li>
-                     <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a target="_blank" rel="noopener" href="https://twitter.com/">Pinterest</a></li>
+                     <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a target="_blank" rel="noopener" href="https://www.pinterest.com/">Pinterest</a></li>
                      <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a target="_blank" rel="noopener" href="https://www.instagram.com/">Instagram</a></li>
                  </ul>
              </div>

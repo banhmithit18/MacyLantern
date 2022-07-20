@@ -90,7 +90,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/pure-white-plates/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
                             <!-- loop product for good looking -->
@@ -101,7 +101,7 @@
                                         <img width="600" height="734" src="img/product/product_1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="e" loading="lazy" srcset="
                                         img/product/product_1.jpg" sizes="(max-width: 600px) 100vw, 600px" />
                                         <div class="qodef-woo-product-image-inner">
-                                            <a href="index2b2c.html?add-to-cart=162" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
+                                            <a href="product-detail.php" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
                                         </div>
                                     </div>
                                     <!-- product info -->
@@ -111,7 +111,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/beautiful-tableware/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
                             <li class="product type-product post-162 status-publish first instock product_cat-anniversary product_tag-supplies product_tag-set product_tag-table has-post-thumbnail shipping-taxable purchasable product-type-simple">
@@ -121,7 +121,7 @@
                                         <img width="600" height="734" src="img/product/product_1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="e" loading="lazy" srcset="
                                         img/product/product_1.jpg" sizes="(max-width: 600px) 100vw, 600px" />
                                         <div class="qodef-woo-product-image-inner">
-                                            <a href="index2b2c.html?add-to-cart=162" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
+                                            <a href="product-detail.php" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
                                         </div>
                                     </div>
                                     <!-- product info -->
@@ -131,7 +131,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/beautiful-tableware/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
                             <li class="product type-product post-162 status-publish first instock product_cat-anniversary product_tag-supplies product_tag-set product_tag-table has-post-thumbnail shipping-taxable purchasable product-type-simple">
@@ -141,7 +141,7 @@
                                         <img width="600" height="734" src="img/product/product_1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="e" loading="lazy" srcset="
                                         img/product/product_1.jpg" sizes="(max-width: 600px) 100vw, 600px" />
                                         <div class="qodef-woo-product-image-inner">
-                                            <a href="index2b2c.html?add-to-cart=162" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
+                                            <a href="product-detail.php" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
                                         </div>
                                     </div>
                                     <!-- product info -->
@@ -151,7 +151,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/beautiful-tableware/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
                             <li class="product type-product post-162 status-publish first instock product_cat-anniversary product_tag-supplies product_tag-set product_tag-table has-post-thumbnail shipping-taxable purchasable product-type-simple">
@@ -161,7 +161,7 @@
                                         <img width="600" height="734" src="img/product/product_1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="e" loading="lazy" srcset="
                                         img/product/product_1.jpg" sizes="(max-width: 600px) 100vw, 600px" />
                                         <div class="qodef-woo-product-image-inner">
-                                            <a href="index2b2c.html?add-to-cart=162" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
+                                            <a href="product-detail.php" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
                                         </div>
                                     </div>
                                     <!-- product info -->
@@ -171,7 +171,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/beautiful-tableware/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
                             <li class="product type-product post-162 status-publish first instock product_cat-anniversary product_tag-supplies product_tag-set product_tag-table has-post-thumbnail shipping-taxable purchasable product-type-simple">
@@ -181,7 +181,7 @@
                                         <img width="600" height="734" src="img/product/product_1.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="e" loading="lazy" srcset="
                                         img/product/product_1.jpg" sizes="(max-width: 600px) 100vw, 600px" />
                                         <div class="qodef-woo-product-image-inner">
-                                            <a href="index2b2c.html?add-to-cart=162" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
+                                            <a href="product-detail.php" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="162" data-product_sku="90" aria-label="Add &ldquo;Beautiful tableware&rdquo; to your cart" rel="nofollow">Detail</a>
                                         </div>
                                     </div>
                                     <!-- product info -->
@@ -191,7 +191,7 @@
                                         </h5>
                                         <span class="price"><span class="woocommerce-Price-amount amount"><bdi>Contact us</bdi></span></span>
                                     </div>
-                                    <a href="../product/beautiful-tableware/index.html" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                    <a href="product-detail.php" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
                                 </div>
                             </li>
 

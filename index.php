@@ -271,7 +271,7 @@
                       Cabbage Daily Prophet letters from no one Dervish and Banges leg.
                     </p>
                   </div>
-                  <div class="vc_empty_space" style="height: 24px"><span class="vc_empty_space_inner"></span></div><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual  qodef-html--link" href="press-awards/index.html" target="_self">
+                  <div class="vc_empty_space" style="height: 24px"><span class="vc_empty_space_inner"></span></div><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual  qodef-html--link" href="blog.php" target="_self">
                     <span class="qodef-m-text">Read more</span>
                   </a>
                 </div>
@@ -335,7 +335,7 @@
                   <div class="vc_empty_space" style="height: 24px">
                     <span class="vc_empty_space_inner"></span>
                   </div>
-                  <a class="qodef-shortcode qodef-m qodef-button qodef-layout--textual qodef-html--link" href="social-events/index.html" target="_self">
+                  <a class="qodef-shortcode qodef-m qodef-button qodef-layout--textual qodef-html--link" href="about-us.php" target="_self">
                     <span class="qodef-m-text">Read more</span>
                   </a>
                 </div>
@@ -358,7 +358,7 @@
                       Niffler dead easy second bedroom.
                     </p>
                   </div>
-                  <div class="vc_empty_space" style="height: 24px"><span class="vc_empty_space_inner"></span></div><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual  qodef-html--link" href="press-awards/index.html" target="_self">
+                  <div class="vc_empty_space" style="height: 24px"><span class="vc_empty_space_inner"></span></div><a class="qodef-shortcode qodef-m  qodef-button qodef-layout--textual  qodef-html--link" href="contact-us.php" target="_self">
                     <span class="qodef-m-text">Read more</span>
                   </a>
                 </div>
