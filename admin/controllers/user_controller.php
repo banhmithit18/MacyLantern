@@ -1,0 +1,302 @@
+<?php
+session_start();
+require_once('../ultis/DBConnection.php');
+require_once('../models/log.php');
+require_once('../models/user.php');
+//check permission
+
+$function = "";
+if (isset($_POST['function'])) {
+    $function = $_REQUEST['function'];
+}
+
+if($_SESSION['user_role'] != 1 && $function != 'change_password'){
+    $return_message = (array('status' => '0', 'response' => 'You do not have permission to access this page', 'error' => 'You do not have permission to access this page'));
+    die(json_encode($return_message));
+}
+
+$page_type = "";
+//function get user from database
+if ($function == "get_user") {
+    $db = new DBConnection();
+    $sql = "SELECT * FROM user ORDER BY user_id desc";
+    $result = $db->Retrive($sql);
+    echo json_encode($result);
+    die();
+}
+
+//function check username exist or not
+function CheckExist($value, $type)
+{
+    $db = new DBConnection();
+    if ($type == "username") {
+        $sql = "SELECT * FROM user WHERE user_username = '$value'";
+    } else if ($type == "email") {
+        $sql = "SELECT * FROM user WHERE user_email = '$value'";
+    } else if ($type == "phone") {
+        $sql = "SELECT * FROM user WHERE user_phone = '$value'";
+    }
+    $result = $db->Retrive($sql);
+    if ($result == "" ||$result == null) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+//function delete user from database
+if ($function == "delete_user") {
+    $user_id = $_REQUEST['user_id'];
+    $user = new User();
+    $user->user_id = $user_id;
+    $db = new DBConnection();
+    if($result = $db->Delete($user)){
+        $log = new Log();
+        $log->log_detail = "Delete user with id = $user_id";
+        $log->log_time = date("Y-m-d H:i:s");
+        $log->user_id = $_SESSION['user_id'];
+        $log->log_name = "Delete user";
+        $db->Create($log);
+        $return_message = (array('status' => '1', 'response' => 'User has been deleted !', 'error' => ''));
+        echo json_encode($return_message);
+        die();
+    }
+    else
+    {
+        $return_message = (array('status' => '0', 'response' => 'Cannot delete user', 'error' => 'Check if user has been used !'));
+        echo json_encode($return_message);
+        die();
+    }
+    
+}
+
+//function add user to database
+if ($function == "add_user") {
+    $user = new User();
+    //validate
+    $user_username = $_POST['user_username'] == null ? "" : $_POST['user_username'];
+    $user_address = $_POST['user_address'] == null ? "" : $_POST['user_address'];
+    $user_phone = $_POST['user_phone'] == null ? "" : $_POST['user_phone'];
+    $user_email = $_POST['user_email'] == null ? "" : $_POST['user_email'];
+    $user_age = $_POST['user_age'] == null ? "" : $_POST['user_age'];
+    $user_gender = $_POST['user_gender'] == null ? 0 : $_POST['user_gender'];
+    $user_name = $_POST['user_name'] == null ? "" : $_POST['user_name'];
+    $user_pwd = $_POST['user_pwd'] == null ? "" : encrypt($_POST['user_pwd']);
+    $user_status = $_POST['user_status'] == null ? 0 : $_POST['user_status'];
+    $user_role = $_POST['user_role'] == null ? 1 : $_POST['user_role'];
+    //check exist
+    if ($check_exist = CheckExist($user_username, "username")) {
+        $return_message = (array('status' => '0', 'response' => 'Username already exist', 'error' => 'Username already exist'));
+        echo json_encode($return_message);
+        die();
+    }
+    if ($check_exist = CheckExist($user_email, "email")) {
+        $return_message = (array('status' => '0', 'response' => 'Email already exist', 'error' => 'Email already exist'));
+        echo json_encode($return_message);
+        die();
+    }
+    if ($check_exist = CheckExist($user_phone, "phone")) {
+        $return_message = (array('status' => '0', 'response' => 'Phone number already exist', 'error' => 'Phone number already exist'));
+        echo json_encode($return_message);
+        die();
+    }
+    //create entity
+    $user->user_username = $user_name;
+    $user->user_address = $user_address;
+    $user->user_age = $user_age;
+    $user->user_email = $user_email;
+    $user->user_gender = $user_gender;
+    $user->user_name = $user_name;
+    $user->user_phone = $user_phone;
+    $user->user_pwd = $user_pwd;
+    $user->user_status = $user_status;
+    $user->user_role = $user_role;
+    //insert
+    $db = new DBConnection();;
+    try {
+        $db->Create($user);
+        $log = new Log();
+        $log->log_name = "Add user";
+        $log->log_detail = "Add user $user_name";
+        $log->user_id = $_SESSION['user_id'];
+        date_default_timezone_set('Asia/Ho_Chi_Minh');
+        $date = date('Y-m-d H:i:s');
+        $log->log_time = $date;
+        $db->Create($log);
+    }catch (Exception $e) {
+        $return_message = (array('status' => '0', 'response' => 'Error', 'error' => $e->getMessage()));
+        echo json_encode($return_message);
+        die();
+    }
+
+    $return_message = (array('status' => '1', 'response' => 'User has been added', 'error' => '', 'user_data' => $user));
+    echo json_encode($return_message);
+    die();
+}
+
+//function update user to database
+if ($function == "update_user") {
+    $user = new User();
+    //validate
+    $user_id = $_POST['user_id'] == null ? 0 : $_POST['user_id'];
+    $user_username = $_POST['user_username'] == null ? "" : $_POST['user_username'];
+    $user_address = $_POST['user_address'] == null ? "" : $_POST['user_address'];
+    $user_phone = $_POST['user_phone'] == null ? "" : $_POST['user_phone'];
+    $user_email = $_POST['user_email'] == null ? "" : $_POST['user_email'];
+    $user_age = $_POST['user_age'] == null ? "" : $_POST['user_age'];
+    $user_gender = $_POST['user_gender'] == null ? 0 : $_POST['user_gender'];
+    $user_name = $_POST['user_name'] == null ? "" : $_POST['user_name'];
+    $user_status = $_POST['user_status'] == null ? 0 : $_POST['user_status'];
+    $user_role = $_POST['user_role'] == null ? 0 : $_POST['user_role'];
+
+    //create ent
+    $user->user_username = $user_username;
+    $user->user_address = $user_address;
+    $user->user_age = $user_age;
+    $user->user_email = $user_email;
+    $user->user_gender = $user_gender;
+    $user->user_name = $user_name;
+    $user->user_phone = $user_phone;
+    $user->user_status = $user_status;
+    $user->user_role = $user_role;
+
+    //create ent old user\
+    $db = new DBConnection();
+    $result  = $db -> Retrive("SELECT * FROM user WHERE user_id = $user_id");
+    $user->user_pwd = $result[0]['user_pwd'];
+
+    if($result[0]['user_email'] != $user_email){
+        $check_exist = CheckExist($user_email, "email");
+        if($check_exist){
+            $return_message = (array('status' => '0', 'response' => 'Email already exist', 'error' => 'Email already exist'));
+            echo json_encode($return_message);
+            die();
+        }
+    }
+    else if($result[0]['user_phone'] != $user_phone){
+        $check_exist = CheckExist($user_phone, "phone");
+        if($check_exist){
+            $return_message = (array('status' => '0', 'response' => 'Phone number already exist', 'error' => 'Phone number already exist'));
+            echo json_encode($return_message);
+            die();
+        }
+    }
+
+
+    //get page type (type = admin: write log, type = user: not write log)    
+    $page_type = $_POST['page_type'] == null ? "admin" : $_POST['page_type'];
+    //update
+    $db = new DBConnection();;
+    if ($db->Update($user, $user_id)) {
+        if ($page_type == "admin") {
+            $log = new Log();
+            $log->log_name = "Update user";
+            $log->log_detail = "Update user $user_name";
+            $log->user_id = $_SESSION['user_id'];
+            date_default_timezone_set('Asia/Ho_Chi_Minh');
+            $date = date('Y-m-d H:i:s');
+            $log->log_time = $date;
+            $db->Create($log);
+            $return_message = (array('status' => '1', 'response' => 'User has been updated', 'error' => ''));
+            echo json_encode($return_message);
+            die();
+        } else {
+            $_SESSION['user_address'] =  $user_address;
+            $_SESSION['user_age'] = $user_age;
+            $_SESSION['user_email'] = $user_email;
+            $_SESSION['user_gender'] = $user_gender;
+            $_SESSION['user_name'] = $user_name;
+            $_SESSION['user_phone'] =  $user_phone;
+            $return_message = (array('status' => '1', 'response' => 'User has been updated', 'error' => ''));
+            echo json_encode($return_message);
+            die();
+        }       
+    }else
+    {
+        $return_message = (array('status' => '0', 'response' => 'Cannot update user!', 'error' => 'Cannot update user!'));
+        echo json_encode($return_message);
+        die();   
+    }
+    die();
+}
+
+if($function == "change_password")
+{
+ 
+        $new_pwd = $_POST['new_password'] == null ? "" : encrypt($_POST['new_password']);
+        $old_pwd = $_POST['old_password'] == null ? "" : encrypt($_POST['old_password']);
+        $user_id = $_POST['user_id'] == null ? "" : $_POST['user_id'];
+
+        $db = new DBConnection();
+        $sql = "SELECT user_id FROM user where user_id='$user_id' and user_pwd = '$old_pwd'";
+        $result = $db -> Retrive($sql);
+        if(empty($result))
+        {
+            $return_message = (array('status' => '0', 'response' => 'Wrong password, please try again!', 'error' => ''));
+            echo json_encode($return_message);
+            die();    
+        }
+        else
+        {
+            $sql = "update user set user_pwd = '$new_pwd' where user_id='$user_id' ";
+            $result = $db -> Retrive($sql);
+            if(empty($result))
+            {
+                $return_message = (array('status' => '0', 'response' => 'Cannot change password, please try if password is the same as before!', 'error' => ''));
+                echo json_encode($return_message);
+                die();    
+            }
+            else
+            {
+                $return_message = (array('status' => '1', 'response' => 'Password has been change!', 'error' => ''));
+                echo json_encode($return_message);
+                die();
+            }
+        }
+
+    
+}
+
+//function reset password
+if ($function == "reset_password"){
+    
+    $user_id = $_POST['user_id'] == null ? 0 : $_POST['user_id'];
+    //reset password 
+    $user_pwd = encrypt("macylantern");
+    $db = new DBConnection();
+    try{
+    $result = $db->Retrive("UPDATE user SET user_pwd = '$user_pwd' WHERE user_id = $user_id");}
+    catch(Exception $e){
+        $e->getMessage();
+        $return_message = (array('status' => '0', 'response' => 'Reset passwrod for user failed', 'error' => $e));
+        echo json_encode($return_message);
+        die();
+    }
+    if($result == "")
+    {
+        $return_message = (array('status' => '0', 'response' => 'Reset passwrod for user failed', 'error' => 'Reset passwrod for user failed'));
+        echo json_encode($return_message);
+        die();
+    }
+    else{
+        $log = new Log();
+        $log->log_name = "Reset password";
+        $log->log_detail = "Reset password for user id =  $user_id";
+        $log->user_id = $_SESSION['user_id'];
+        date_default_timezone_set('Asia/Ho_Chi_Minh');
+        $date = date('Y-m-d H:i:s');
+        $log->log_time = $date;
+        $db->Create($log);
+        $return_message = (array('status' => '1', 'response' => 'Reset passwrod for user successfully', 'error' => ''));
+        echo json_encode($return_message);
+        die();
+    }
+}
+
+
+//function encrypt password with sha256
+function encrypt($pwd)
+{
+    $pwd = hash('sha256', $pwd);
+    return $pwd;
+}

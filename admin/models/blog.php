@@ -1,51 +1,45 @@
-<?
-Class Blog{
-    private $blog_content;
+<?php
+class blog{
+    public $blog_content_path;
     public function GetBlogContent(){
-     return $this->blog_content;
+     return $this->blog_content_path;
     }
-    public function SetBlogContent($blog_content){
-     $this->name = $blog_content;
-    }
-
-    private $blog_id;
-    public function GetBlogId(){
-     return $this->blog_id;
-    }
-    public function SetBlogId($blog_id){
-     $this->name = $blog_id;
+    public function SetBlogContent($blog_content_path){
+     $this->blog_content_path = $blog_content_path;
     }
 
-    private $blog_piority;
-    public function GetBlogPiority(){
-     return $this->blog_piority;
+
+
+    public $blog_priority;
+    public function GetBlogpriority(){
+     return $this->blog_priority;
     }
-    public function SetBlogPiority($blog_piority){
-     $this->name = $blog_piority;
+    public function SetBlogpriority($blog_priority){
+     $this->blog_priority = $blog_priority;
     }
 
-    private $blog_status;
+    public $blog_status;
     public function GetBlogStatus(){
      return $this->blog_status;
     }
     public function SetBlogStatus($blog_status){
-     $this->name = $blog_status;
+     $this->blog_status = $blog_status;
     }
 
-    private $blog_title;
+    public $blog_title;
     public function GetBlogTitle(){
      return $this->blog_title;
     }
     public function SetBlogTitle($blog_title){
-     $this->name = $blog_title;
+     $this->blog_title = $blog_title;
     }
 
-    private $image_id;
+    public $image_id;
     public function GetImageId(){
      return $this->image_id;
     }
     public function SetImageId($image_id){
-     $this->name = $image_id;
+     $this->image_id = $image_id;
     }
 
     public function __construct()

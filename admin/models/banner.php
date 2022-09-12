@@ -1,67 +1,61 @@
-<?
+<?php
 class banner{
-    private $banner_id;
-    public function GetBannerId(){
-     return $this->banner_id;
-    }
-    public function SetBannerId($banner_id){
-     $this->name = $banner_id;
-    }
+   
 
-    private $banner_content;
+    public $banner_content;
     public function GetBannerContent(){
      return $this->banner_content;
     }
     public function SetBannerContent($banner_content){
-     $this->name = $banner_content;
+     $this->banner_content = $banner_content;
     }
     
-    private $banner_link;
+    public $banner_link;
     public function GetBannerLink(){
      return $this->banner_link;
     }
     public function SetBannerLink($banner_link){
-     $this->name = $banner_link;
+     $this->banner_link = $banner_link;
     }
 
-    private $banner_piority;
-    public function GetBannerPiority(){
-     return $this->banner_piority;
+    public $banner_priority;
+    public function GetBannerpriority(){
+     return $this->banner_priority;
     }
-    public function SetBannerPiority($banner_piority){
-     $this->name = $banner_piority;
+    public function SetBannerpriority($banner_priority){
+     $this->banner_priority = $banner_priority;
     }
 
-    private $banner_status;
+    public $banner_status;
     public function GetBannerStatus(){
      return $this->banner_status;
     }
     public function SetBannerStatus($banner_status){
-     $this->name = $banner_status;
+     $this->banner_status = $banner_status;
     }
 
-    private $banner_title;
+    public $banner_title;
     public function GetBannerTitle(){
      return $this->banner_title;
     }
     public function SetBannerTitle($banner_title){
-     $this->name = $banner_title;
+     $this->banner_title = $banner_title;
     }
 
-    private $banner_type;
+    public $banner_type;
     public function GetBannerType(){
      return $this->banner_type;
     }
     public function SetBannerType($banner_type){
-     $this->name = $banner_type;
+     $this->banner_type = $banner_type;
     }
     
-    private $image_id;
+    public $image_id;
     public function GetImageId(){
      return $this->image_id;
     }
     public function SetImageId($image_id){
-     $this->name = $image_id;
+     $this->image_id = $image_id;
     }
 
     public function __construct()

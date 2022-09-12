@@ -1,60 +1,54 @@
-<?
- Class customer
+<?php
+ class customer
  {
-  private $customer_address;
+  public $customer_address;
   public function GetCustomerAddress(){
    return $this->customer_address;
   }
   public function SetCustomerAddress($customer_address){
-   $this->name = $customer_address;
+   $this->customer_address = $customer_address;
   }
 
-  private $customer_age;
+  public $customer_age;
   public function GetCustomerAge(){
    return $this->customer_age;
   }
   public function SetCustomerAge($customer_age){
-   $this->name = $customer_age;
+   $this->customer_age = $customer_age;
   }
 
-  private $customer_email;
+  public $customer_email;
   public function GetCustomerEmail(){
    return $this->customer_email;
   }
   public function SetCustomerEmail($customer_email){
-   $this->name = $customer_email;
+   $this->customer_email = $customer_email;
   }
 
-  private $customer_gender;
+  public $customer_gender;
   public function GetCustomerGender(){
    return $this->customer_gender;
   }
   public function SetCustomerGender($customer_gender){
-   $this->name = $customer_gender;
+   $this->customer_gender = $customer_gender;
   }
 
-  private $customer_id;
-  public function GetCustomerId(){
-   return $this->customer_id;
-  }
-  public function SetCustomerId($customer_id){
-   $this->name = $customer_id;
-  }
+ 
 
-  private $customer_name;
+  public $customer_name;
   public function GetCustomerName(){
    return $this->customer_name;
   }
   public function SetCustomerName($customer_name){
-   $this->name = $customer_name;
+   $this->customer_name = $customer_name;
   }
 
-  private $customer_phone;
+  public $customer_phone;
   public function GetCustomerPhone(){
    return $this->customer_phone;
   }
   public function SetCustomerPhone($customer_phone){
-   $this->name = $customer_phone;
+   $this->customer_phone = $customer_phone;
   }
 
   public function __construct()
