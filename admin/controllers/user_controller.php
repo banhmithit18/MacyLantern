@@ -6,7 +6,7 @@ require_once('../models/user.php');
 //check permission
 
 $function = "";
-if (isset($_POST['function'])) {
+if (isset($_REQUEST['function'])) {
     $function = $_REQUEST['function'];
 }
 

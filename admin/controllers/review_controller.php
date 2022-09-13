@@ -3,7 +3,6 @@ session_start();
 require_once('../ultis/DBConnection.php');
 require_once('../models/log.php');
 require_once('../models/review.php');
-require_once('../controlles/login.php');
 
 
 $function = "";
@@ -17,7 +16,8 @@ if($function == "get_review"){
     review.review_id, review.review_comment, review.review_status, review.review_time,review.review_star
     FROM `review` 
     join product on product.product_id = review.product_id
-    join customer on review.customer_id = customer.customer_id";
+    join customer on review.customer_id = customer.customer_id
+    order by review.review_time desc ";
     $result = $db->Retrive($sql);
     echo json_encode($result);
     die();
