@@ -10,7 +10,7 @@ if (isset($_REQUEST['function'])) {
     $function = $_REQUEST['function'];
 }
 
-if($_SESSION['user_role'] != 1 && $function != 'change_password'){
+if($_SESSION['user_role'] != 0 && $function != 'change_password'){
     $return_message = (array('status' => '0', 'response' => 'You do not have permission to access this page', 'error' => 'You do not have permission to access this page'));
     die(json_encode($return_message));
 }

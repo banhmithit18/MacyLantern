@@ -16,7 +16,8 @@ if($function == "get_contact"){
     contact_us_id, contact_us_messenger, contact_us_status, contact_us_created_time
     FROM `contact_us` 
     join product on product.product_id = contact_us.product_id
-    join customer on contact_us.customer_id = customer.customer_id";
+    join customer on contact_us.customer_id = customer.customer_id
+    order by contact_us_status";
     $result = $db->Retrive($sql);
     echo json_encode($result);
     die();

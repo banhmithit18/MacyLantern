@@ -290,7 +290,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     ajax: {
       url: "../controllers/user_controller.php?function=get_user",
       dataSrc: function (data) {
-        console.log(data);
         if (data.status == "0") {
           //alert confirm
           $.confirm({
@@ -301,7 +300,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             buttons: {
               OK: function () {
                 //href to index
-                window.location.href = "../index.php";
+                window.location.href = "../index.html";
               },
               //try load the page
               "Try again": function () {
