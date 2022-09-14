@@ -6,18 +6,24 @@ require_once('../models/user.php');
 //check permission
 
 $function = "";
+$user_role = "1";
 if (isset($_REQUEST['function'])) {
     $function = $_REQUEST['function'];
 }
 
-if($_SESSION['user_role'] != 0 && $function != 'change_password'){
-    $return_message = (array('status' => '0', 'response' => 'You do not have permission to access this page', 'error' => 'You do not have permission to access this page'));
-    die(json_encode($return_message));
+if (isset($_SESSION['user_role'])) {
+    $user_role = $_SESSION['user_role'];
 }
 
 $page_type = "";
 //function get user from database
 if ($function == "get_user") {
+    if($user_role != 0)
+    {
+        $result = [];
+        echo json_encode($result);
+        die();
+    }
     $db = new DBConnection();
     $sql = "SELECT * FROM user ORDER BY user_id desc";
     $result = $db->Retrive($sql);

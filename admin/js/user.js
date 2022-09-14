@@ -289,32 +289,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var t = $("#table_user").DataTable({
     ajax: {
       url: "../controllers/user_controller.php?function=get_user",
-      dataSrc: function (data) {
-        if (data.status == "0") {
-          //alert confirm
-          $.confirm({
-            title: "Error!",
-            type: "red",
-            typeAnimated: true,
-            content: "Cannot load data ! Reason: " + data.error,
-            buttons: {
-              OK: function () {
-                //href to index
-                window.location.href = "../index.html";
-              },
-              //try load the page
-              "Try again": function () {
-                //reload page
-                location.reload();
-              },
-            },
-          });
-        } else {
-          return data;
-        }
-      },
+      dataSrc: "",
     },
-
     rowId: "user_id",
     columns: [
       { data: null },

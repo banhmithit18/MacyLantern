@@ -213,7 +213,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
           page_type: "user",
         },
         success: function (data) {
-          console.log(data);
           var data = $.parseJSON(data);
           if (data.status == "1") {
             $.alert({

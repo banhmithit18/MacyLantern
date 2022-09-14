@@ -1,5 +1,7 @@
 <?php include("../includes/header.php") ?>
+
 <main>
+    
     <div class="container-fluid px-4">
         <h1 class="mt-4">User</h1>
         <ol class="breadcrumb mb-4">
@@ -210,3 +212,26 @@
 
 <?php include("../includes/footer.php") ?>
 <script src="../js/user.js"></script>
+<?php  
+if (isset($_SESSION['user_role'])) {
+    $value = $_SESSION['user_role'];   
+    if ($value == "1")
+    {
+        echo "<script>  $.alert({
+            title: 'Error !',
+            content: 'You do not have permission to access this page !',
+            type: 'red',
+            typeAnimated: true,
+            icon: 'fa fa-exclamation-circle',
+            animation: 'zoom',
+            animateFromElement: false,
+            buttons: {
+                OK: function () {
+                  window.location.href = '../views/index.php';
+                },
+              },
+          }); 
+          </script>";
+    }                
+}
+?>
