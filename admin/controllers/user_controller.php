@@ -25,7 +25,7 @@ if ($function == "get_user") {
         die();
     }
     $db = new DBConnection();
-    $sql = "SELECT * FROM 'user' ORDER BY user_id desc";
+    $sql = "SELECT * FROM `user` ORDER BY user_id desc";
     $result = $db->Retrive($sql);
     echo json_encode($result);
     die();
