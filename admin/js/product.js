@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       url: "../controllers/product_controller.php?function=get_product",
       dataSrc: "",
     },
-    rowId: "blog_id",
+    rowId: "product_id",
     columns: [
       { data: null },
       { data: "product_name" },

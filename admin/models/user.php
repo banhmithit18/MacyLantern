@@ -81,14 +81,6 @@ public function SetUserRole($user_role){
  $this->user_role = $user_role;
 }
 
-public $user_id;
-public function GetUserId(){
- return $this->user_id;
-}
-public function SetUserId($user_id){
- $this->user_id = $user_id;
-}
-
 public function __construct()
 {
 

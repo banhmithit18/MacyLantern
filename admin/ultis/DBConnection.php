@@ -18,6 +18,8 @@ public function __construct()
 //connect database
 public function Connect(){
     $conn = new mysqli($this->servername,$this->username,$this->password,$this->database);
+    $conn->set_charset("utf8");
+
     if(mysqli_connect_error())
     {
         die("Connection failed: " . mysqli_connect_error());

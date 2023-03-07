@@ -25,7 +25,7 @@ if ($function == "get_user") {
         die();
     }
     $db = new DBConnection();
-    $sql = "SELECT * FROM `user` ORDER BY user_id desc";
+    $sql = "SELECT * FROM user ORDER BY user_id desc";
     $result = $db->Retrive($sql);
     echo json_encode($result);
     die();
@@ -219,7 +219,7 @@ if ($function == "update_user") {
         }       
     }else
     {
-        $return_message = (array('status' => '0', 'response' => 'Cannot update user!', 'error' => 'Cannot update user!'));
+        $return_message = (array('status' => '0', 'response' => 'Cannot update user!', 'error' => ' Try again later!'));
         echo json_encode($return_message);
         die();   
     }
