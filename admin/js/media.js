@@ -75,6 +75,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
               else if (data == "3") {
                 return 'Pinterest';
               }
+              else if (data == "4") {
+                return 'Quote';
+              }
             },
           },
         { data: "media_value" },       
