@@ -498,8 +498,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
           $("#btn_preview_image").attr("disabled", true);
           $("#form_product").removeClass("was-validated");
           //reload table
-          $("#table_product").DataTable().ajax.reload();
-
+          var startPos = document.body.scrollTop
+          console.log(startPos)
+          $("#table_product").DataTable().ajax.reload(() => {
+            document.body.scrollTop = startPos;
+           },false);
+           document.body.scrollTop = startPos;
           //alert
           $.alert({
             title: "Success!",
@@ -1048,7 +1052,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         }
         if (data.status == "1") {
           $("#modal-product").modal("hide");
-          $("#table_product").DataTable().ajax.reload();
+          var startPos = document.body.scrollTop
+          $("#table_product").DataTable().ajax.reload(() => {
+            document.body.scrollTop = startPos; 
+           },false);
           $.alert({
             title: "Success!",
             content: data.response,

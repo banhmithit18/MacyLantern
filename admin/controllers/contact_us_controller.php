@@ -11,11 +11,11 @@ if (isset($_REQUEST['function'])) {
 }
 if($function == "get_contact"){
     $db = new DBConnection();
-    $sql = "SELECT product.product_id, product.product_name, 
+    $sql = "SELECT product.product_id, IFNULL(product.product_name, '') as product_name,
     customer.customer_id,customer.customer_name,customer.customer_email, customer.customer_phone,
     contact_us_id, contact_us_messenger, contact_us_status, contact_us_created_time
     FROM `contact_us` 
-    join product on product.product_id = contact_us.product_id
+    left join product on product.product_id = contact_us.product_id
     join customer on contact_us.customer_id = customer.customer_id
     order by contact_us_status";
     $result = $db->Retrive($sql);

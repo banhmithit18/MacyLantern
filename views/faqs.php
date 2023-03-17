@@ -1,4 +1,5 @@
-<?php include("includes/header.php") ?>
+<?php include("../includes/header.php") ?>
+<?php require("../controllers/faq_controller.php") ?>
 
 <style>
     #qodef-page-outer {
@@ -13,9 +14,9 @@
     <div class="qodef-page-title qodef-m qodef-title--standard-with-breadcrumbs qodef-title-text--left">
         <div class="qodef-m-inner">
             <div class="qodef-m-content qodef-content-grid">
-                <h5 class="qodef-m-title entry-title">About Us</h5>
+                <h5 class="qodef-m-title entry-title">FAQS</h5>
                 <div itemprop="breadcrumb" class="qodef-breadcrumbs">
-                    <a itemprop="url" class="qodef-breadcrumbs-link" href="index.php"><span itemprop="title">Home</span></a><span class="qodef-breadcrumbs-separator"></span><span itemprop="title" class="qodef-breadcrumbs-current">Blog</span>
+                    <a itemprop="url" class="qodef-breadcrumbs-link" href="index.php"><span itemprop="title">Home</span></a><span class="qodef-breadcrumbs-separator"></span><span itemprop="title" class="qodef-breadcrumbs-current">FAQS</span>
                 </div>
             </div>
         </div>
@@ -52,18 +53,29 @@
                     </div>
                 </div>
                 <div id="qodef-woo-page" class="qodef-grid-item qodef-page-content-section qodef-col--12 qodef--list">
-                <header class="woocommerce-products-header"></header>
-                    <div class="woocommerce-notices-wrapper"></div>
-            
-      
-          
-           
-          
-             
-
+                    <?php
+                    $faq = $_SESSION['faq'];
+                    if ($faq != null) {
+                        for ($i = 0; $i < count($faq); $i++) {
+                            if ($i > 0) {
+                                echo ' <div class="line"></div>';
+                            }
+                            $a = $faq[$i]['faq_answer'];
+                            $q = $faq[$i]['faq_question'];
+                            $html = '<div class="faq-one">
+                                            <h5 class="faq-page" style="color:darkblue">' . $q . '</h5>
+                                            <div class="faq-body">
+                                                <h6>' . $a . '</h6>
+                                            </div>
+                                        </div>';
+                            echo $html;
+                        }
+                    }
+                    ?>
                 </div>
+            </div>
         </main>
     </div>
 </div>
 
-<?php include('includes/footer.php') ?>
+<?php include("../includes/footer.php") ?>

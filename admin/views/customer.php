@@ -22,7 +22,7 @@
                 <div class="row">
                     <div class="col">
                         <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="customer_phone" placeholder="Enter phone number" pattern="[0-9]+" required>
+                        <input type="text" class="form-control" id="customer_phone" placeholder="Enter phone number" pattern="[0-9]+">
                         <div class="invalid-feedback">Please enter number only</div>
 
                     </div>
@@ -112,7 +112,7 @@
                     <div class="row">
                         <div class="col">
                             <label for="phone">Phone</label>
-                            <input type="text" class="form-control" id="edit_customer_phone" placeholder="Enter phone number" pattern="[0-9]+" required>
+                            <input type="text" class="form-control" id="edit_customer_phone" placeholder="Enter phone number" pattern="[0-9]+">
                             <div class="invalid-feedback">Please enter number only</div>
 
                         </div>

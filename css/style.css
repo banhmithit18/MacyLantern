@@ -85582,9 +85582,6 @@ body:not([class*="banquet-core"])
   .qodef-woo-product-list ul.products.columns-2 > .product {
     width: 100%;
   }
-  .qodef-woo-product-list ul.products.columns-3 > .product {
-    width: 100%;
-  }
   .qodef-woo-product-list ul.products.columns-4 > .product {
     width: 100%;
   }

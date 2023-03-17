@@ -27,7 +27,7 @@ if (!isset($_SESSION['user_id'])) {
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Admin</a>
+        <a class="navbar-brand ps-3" href="index.php">Admin</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar-->
@@ -96,8 +96,16 @@ if (!isset($_SESSION['user_id'])) {
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-info"></i></div>
                             About us
                         </a>
+                        <a class="nav-link" href="../views/media.php">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            Media
+                        </a>
+                        <a class="nav-link" href="../views/logo.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
+                            Logo
+                        </a>
                         <a class="nav-link" href="../views/log.php">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-file-lines"></i></i></div>
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-file-lines"></i></div>
                             Log
                         </a>                       
                     </div>

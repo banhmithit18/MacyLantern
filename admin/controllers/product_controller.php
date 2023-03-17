@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 require_once('../ultis/DBConnection.php');
 require_once('../models/log.php');
@@ -252,7 +252,7 @@ function UploadImage($imgae, $product_id, $create)
     if (in_array($file_ext, $allowed)) {
         if ($file_error === 0) {
             //genarate time stamp with blog id
-            $time_stamp = $file_name . time() . $product_id;
+            $time_stamp =   $product_id ."_".time();
             $file_name_new = $time_stamp . "." . $file_ext;
             $file_destination = $image_path . $file_name_new;
             move_uploaded_file($file_tmp, $file_destination);

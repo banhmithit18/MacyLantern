@@ -5,10 +5,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     $("#form_customer").addClass("was-validated");
     //check if email and phone right format
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-z]{2,4})+$/;
-    var regex_number = /^[0-9]+$/;
     if (
-      !regex.test($("#customer_email").val()) ||
-      !regex_number.test($("#customer_phone").val())
+      !regex.test($("#customer_email").val()) 
     ) {
       return;
     }
@@ -23,7 +21,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     //check if not null
     if (
       customer_email != "" &&
-      customer_phone != "" &&
       customer_age != "" &&
       customer_name != ""
     ) {
@@ -197,10 +194,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     $("#form_customer_edit").addClass("was-validated");
     //check if email and phone right format
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-z]{2,4})+$/;
-    var regex_number = /^[0-9]+$/;
     if (
-      !regex.test($("#edit_customer_email").val()) ||
-      !regex_number.test($("#edit_customer_phone").val())
+      !regex.test($("#edit_customer_email").val()) 
     ) {
       return;
     }

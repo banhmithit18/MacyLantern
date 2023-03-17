@@ -1,6 +1,4 @@
 <?php
-require_once("../models/about_us.php");
-require_once("../models/user.php");
 class DBConnection {
 // private $servername = "localhost:3306";
 // private $username = "macylantern";

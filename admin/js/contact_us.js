@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         data: "product_name",
         render: function (data, type, row, meta) {
           return (
-            "<a target='_blank' href='../../product-detail.php?id=" +
+            "<a target='_blank' href='../../views/product-detail.php?product_id=" +
             row.product_id +
             "'>" +
             data +

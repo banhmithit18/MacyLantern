@@ -77,11 +77,7 @@ if ($function == "add_customer") {
         echo json_encode($return_message);
         die();
     }
-    if ($check_exist = CheckExist($customer_phone, "phone")) {
-        $return_message = (array('status' => '0', 'response' => 'Phone number already exist', 'error' => 'Phone number already exist'));
-        echo json_encode($return_message);
-        die();
-    }
+
     //create entity
     $customer->customer_address = $customer_address;
     $customer->customer_age = $customer_age;
@@ -140,14 +136,6 @@ if ($function == "update_customer") {
         $check_exist = CheckExist($customer_email, "email");
         if($check_exist){
             $return_message = (array('status' => '0', 'response' => 'Email already exist', 'error' => 'Email already exist'));
-            echo json_encode($return_message);
-            die();
-        }
-    }
-    else if($result[0]['customer_phone'] != $customer_phone){
-        $check_exist = CheckExist($customer_phone, "phone");
-        if($check_exist){
-            $return_message = (array('status' => '0', 'response' => 'Phone number already exist', 'error' => 'Phone number already exist'));
             echo json_encode($return_message);
             die();
         }

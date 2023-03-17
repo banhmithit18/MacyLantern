@@ -1,3 +1,30 @@
+<?php require("../controllers/media_controller.php") ?>
+<?php 
+  $fb = "";
+  $ins = "";
+  $pin = "";
+  $logo_path = "";
+  if (isset($_SESSION['media'])) {
+    $media = $_SESSION['media'];
+    for($i = 0 ; $i < count($media) ; $i++){
+        $type = $media[$i]['media_type'];
+        if($type == "1"){
+          $fb = $media[$i]['media_value'];
+        }
+        if($type == "2"){
+          $ins = $media[$i]['media_value'];
+        }
+        if($type == "3"){
+          $pin = $media[$i]['media_value'];
+        }
+    }
+  }
+  if (isset($_SESSION['logo'])) {
+    $logo = $_SESSION['logo'];
+    $logo_path = substr($logo[0]['image_path'], 3);
+
+  }
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -7,8 +34,9 @@
   <title>Macy Latern</title>
 
   <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
-  <link rel="icon" href="img/logo.png">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="icon" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+
 
   <style id="banquet-style-inline-css" type="text/css">
     #qodef-page-outer {
@@ -35,13 +63,13 @@
       }
     }
   </style>
-  <script type="text/javascript" src="js/jquery.minaf6c.js" id="jquery-core-js"></script>
-  <script type="text/javascript" src="js/jquery-migrate.mind617.js" id="jquery-migrate-js"></script>
-  <script type="text/javascript" src="js/rbtools.min49c2.js" id="tp-tools-js"></script>
-  <script type="text/javascript" src="js/rs6.min49c2.js" id="revmin-js"></script>
-  <script type="text/javascript" src="js/jquery.blockUI.mina19f.js" id="jquery-blockui-js"></script>
-  <script type="text/javascript" src="js/flatpickr.min69c8.js" id="ppress-flatpickr-js"></script>
-  <script type="text/javascript" src="js/select2.min69c8.js" id="ppress-select2-js"></script>
+  <script type="text/javascript" src="../js/jquery.minaf6c.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="../js/jquery-migrate.mind617.js" id="jquery-migrate-js"></script>
+  <script type="text/javascript" src="../js/rbtools.min49c2.js" id="tp-tools-js"></script>
+  <script type="text/javascript" src="../js/rs6.min49c2.js" id="revmin-js"></script>
+  <script type="text/javascript" src="../js/jquery.blockUI.mina19f.js" id="jquery-blockui-js"></script>
+  <script type="text/javascript" src="../js/flatpickr.min69c8.js" id="ppress-flatpickr-js"></script>
+  <script type="text/javascript" src="../js/select2.min69c8.js" id="ppress-select2-js"></script>
   <script type="text/javascript">
     function setREVStartSize(e) {
       //window.requestAnimationFrame(function() {
@@ -236,9 +264,9 @@
     <header id="qodef-page-header">
       <div id="qodef-page-header-inner">
         <a class="qodef-header-logo-link qodef-height--not-set" href="index.php" rel="home">
-          <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" />
-          <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
-          <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--light" alt="logo main" loading="lazy" />
+          <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--main" alt="logo main" />
+          <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
+          <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--light" alt="logo main" loading="lazy" />
         </a>
         <nav class="qodef-header-navigation" role="navigation" aria-label="Top Menu">
           <ul id="qodef-main-navigation-menu" class="menu">
@@ -275,10 +303,10 @@
     <header id="qodef-page-mobile-header">
       <div id="qodef-page-mobile-header-inner">
         <a itemprop="url" class="qodef-mobile-header-logo-link" href="index.php" rel="home">
-        <img src="img/logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" />
+        <img src="../img/logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" />
 
-          <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
-          <img width="202" height="60" src="img/logo.png" class="qodef-header-logo-image qodef--light" alt="logo light" loading="lazy" /></a><a id="qodef-mobile-header-opener" href="#">
+          <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
+          <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--light" alt="logo light" loading="lazy" /></a><a id="qodef-mobile-header-opener" href="#">
           <span class="qodef-lines">
             <span class="qodef-line qodef-line-1"></span>
             <span class="qodef-line qodef-line-2"></span>
