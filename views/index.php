@@ -207,7 +207,7 @@
                             <div class="wpb_text_column wpb_content_element">
                               <div class="wpb_wrapper">
                                 <h3 id="quote-content">
-                                  Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal.
+                                  <?php echo $quote;?>
                                 </h3>
                               </div>
                             </div>

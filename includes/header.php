@@ -4,6 +4,7 @@
   $ins = "";
   $pin = "";
   $logo_path = "";
+  $quote ="";
   if (isset($_SESSION['media'])) {
     $media = $_SESSION['media'];
     for($i = 0 ; $i < count($media) ; $i++){
@@ -16,6 +17,9 @@
         }
         if($type == "3"){
           $pin = $media[$i]['media_value'];
+        }
+        if($type == "4"){
+          $quote = $media[$i]['media_value'];
         }
     }
   }
