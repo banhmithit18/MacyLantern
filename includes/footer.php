@@ -63,7 +63,7 @@
      <a id="qodef-side-area-close" class="qodef-side-area-close--predefined" href="javascript:void(0)">
          <span class="qodef-lines"><span class="qodef-line qodef-line-1"></span><span class="qodef-line qodef-line-2"></span></span> </a>
      <div id="qodef-side-area-inner">
-         <div id="media_image-2" class="widget widget_media_image" data-area="side-area"><a href="index.php"><img src="../img/logo.png" class="image wp-image-1607  attachment-full size-full" alt="x" loading="lazy" /></a></div>
+         <div id="media_image-2" class="widget widget_media_image" data-area="side-area"><a href="index.php"><img src="<?php echo $logo_path; ?>" class="image wp-image-1607  attachment-full size-full" alt="x" loading="lazy" /></a></div>
          <div id="banquet_core_separator-5" class="widget widget_banquet_core_separator" data-area="side-area">
              <div class="qodef-shortcode qodef-m  qodef-separator clear ">
                  <div class="qodef-m-line" style="border-color: rgba(191,191,191,0);width: 1px;border-bottom-width: 1px;margin-top: 0px;margin-bottom: 15px"></div>
