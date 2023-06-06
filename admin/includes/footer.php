@@ -91,9 +91,9 @@
                             <?php
                             $value  = null;
                             if (isset($_SESSION['user_address'])) {
-                                $value = $_SESSION['user_email'];
+                                $value = $_SESSION['user_address'];
                             }
-                            echo '<textarea class="form-control" id="information_user_address" rows="2" value="' . $value . '" placeholder="Enter address"></textarea>';
+                            echo '<textarea class="form-control" id="information_user_address" rows="2" value="' . $value . '" placeholder="Enter address">'. $value .'</textarea>';
                             ?>
                         </div>
                     </div>
@@ -113,18 +113,18 @@
                                         </select>";
                             } else if ($value == "1") {
                                 $html .= "<option value='0'>Female</option>
-                                          <option value='1 selected'>Male</option>
+                                          <option value='1' selected>Male</option>
                                           <option value='2'>Other</option>
                                         </select>";
                             } else if ($value == "2") {
                                 $html .= "<option value='0'>Female</option>
                                           <option value='1'>Male</option>
-                                          <option value='2 selected'>Other</option>
+                                          <option value='2' selected>Other</option>
                                         </select>";
                             } else {
                                 $html .= "<option value='0'>Female</option>
                                           <option value='1'>Male</option>
-                                          <option value='2 selected'>Other</option>
+                                          <option value='2' selected>Other</option>
                                         </select>";
                             }
                             echo $html;
