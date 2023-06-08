@@ -43,7 +43,16 @@ if($function == "contact"){
         if($product_id != 0){
             $contact_us->SetProductId($product_id); 
         }
-        $db->Create($contact_us);
+        if ($db->Create($contact_us)){
+            ini_set( 'display_errors', 1 );
+            error_reporting( E_ALL );
+            $from = "macylantern@macylantern.com";
+            $to = "shrimp3012@gmail.com";
+            $subject = "Kiểm tra trang admin";
+            $message = "Khách hàng $name - email ($email) đã gửi yêu cầu hỗ trợ, vui lòng vào trang admin để kiểm tra!";
+            $headers = "From:" . $from;
+            mail($to,$subject,$message, $headers);
+        }
         if($product_id != 0){   
             echo '<script type="text/javascript">window.location = "product-detail.php?product_id='.$product_id.'#"</script>';
         }else{
