@@ -307,7 +307,7 @@
     <header id="qodef-page-mobile-header">
       <div id="qodef-page-mobile-header-inner">
         <a itemprop="url" class="qodef-mobile-header-logo-link" href="index.php" rel="home">
-        <img src="../img/logo.png" class="qodef-header-logo-image qodef--main" alt="logo main" />
+        <img src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--main" alt="logo main" />
 
           <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--dark" alt="logo dark" loading="lazy" />
           <img width="202" height="60" src="<?php echo $logo_path; ?>" class="qodef-header-logo-image qodef--light" alt="logo light" loading="lazy" /></a><a id="qodef-mobile-header-opener" href="#">
